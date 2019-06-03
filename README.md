@@ -30,12 +30,11 @@ The network has been trained on [MatterPort](https://matterport.com/it/) dataset
 
 ## Android
 The code is based on [Google android examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android).
-
-Android `target` version is 26 while `minimum` is 21. 
+Android `target` version is 26 while `minimum` is 21. Android Studio is required.
 
 ## iOS
-The demo on iOS has been developed by Giulio Zaccaroni
+The demo on iOS has been developed by Giulio Zaccaroni.
+XCode is required to build the app, moreover you need to sign in with your AppleID and trust yourself as certified developer.
 
 ## License
-
-The code provided in this repository has a demonstrative purpose only. You can download, modify and try it on your mobile phone with no restriction. However, the trained model can not be used for any scopes not covered by [MatterPort](https://matterport.com/it/) license.
+The code provided in this repository has a demonstrative purpose only. You can download, modify and try it on your mobile phone with no restrictions. However, the trained model can not be used for scopes not covered by the [MatterPort’s](https://matterport.com/it/) license.
