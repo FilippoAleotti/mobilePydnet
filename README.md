@@ -2,7 +2,6 @@
 
 This repository contains the source code to run PyDNet on mobile devices (`Android` and `iOS`)
 
-
 If you use this code in your projects, please cite our paper:
 
 ```
@@ -23,6 +22,11 @@ More info about the work can be found at these links:
 
 ## Model
 The network has been trained on [MatterPort](https://matterport.com/it/) dataset for 1.2M steps, using the HuBer loss on disparity labels offered by the dataset as supervision.
+
+<div align="center">
+  <img src="images/im0.jpg" width="400" height="400"/>
+  <img src="images/im1.jpg" width="400" height="400"/>
+</div>
 
 ## Android
 The code is based on [Google android examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android).
