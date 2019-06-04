@@ -24,9 +24,9 @@ More info about the work can be found at these links:
 The network has been trained on [MatterPort](https://matterport.com/it/) dataset for 1.2M steps, using the HuBer loss on disparity labels offered by the dataset as supervision.
 
 <div align="center">
-  <img src="images/im0.jpg" width="300" height="300"/>
-  <img src="images/im1.jpg" width="300" height="300"/>
-  <img src="images/im2.jpg" width="300" height="300"/>
+  <img src="images/im0.jpg" width="280" height="280"/>
+  <img src="images/im1.jpg" width="280" height="280"/>
+  <img src="images/im2.jpg" width="280" height="280"/>
 </div>
 
 ## Android
