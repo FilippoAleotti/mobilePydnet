@@ -39,7 +39,7 @@ public class StreamActivity extends CameraActivity implements OnImageAvailableLi
     private ColorMapper colorMapper = null;
     private boolean applyColormap = true;
     private static final boolean MAINTAIN_ASPECT = true;
-    private Utils.Scale scale = Utils.Scale.HEIGHT;
+    private Utils.Scale scale = Utils.Scale.HALF;
     private static float COLOR_SCALE_FACTOR =  10.5f;
     private static int NUMBER_THREADS = Runtime.getRuntime().availableProcessors();
 
