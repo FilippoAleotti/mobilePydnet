@@ -33,6 +33,7 @@ The code is based on [Google android examples](https://github.com/tensorflow/ten
 Android `target` version is 26 while `minimum` is 21. Android Studio is required.
 
 Currently, we use `tensorflow-android` instead of `tf-lite`, and no gpu-optimisation is supported.
+
 **Mode**: portrait
 
 ### Android Examples
