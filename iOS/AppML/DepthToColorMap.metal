@@ -27,7 +27,7 @@ kernel void depthToColorMap(texture2d<float, access::read>  inputTexture      [[
 	}
 	
 	float depth = inputTexture.read(gid).x;
-    float scale_factor = 7.0;
+    float scale_factor = 10.5;
     depth = depth * scale_factor * 255;
     if(depth > 255){
         depth = 255;
