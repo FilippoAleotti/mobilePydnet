@@ -24,12 +24,8 @@ More info about the work can be found at these links:
 The network has been trained on [MatterPort](https://matterport.com/it/) dataset for 1.2M steps, using the HuBer loss on disparity labels offered by the dataset as supervision.
 
 <p align="center">
-  <img src="images/im0.jpg" width="400" height="400"/>
-  <img src="images/im1.jpg" width="400" height="400"/>
-</p>
-<p align="center">
-  <img src="images/im2.jpg" width="400" height="400"/>
-  <img src="images/im3.jpg" width="400" height="400"/>
+  <img src="images/im0.jpg" width="300" height="500"/>
+  <img src="images/im1.jpg" width="300" height="500"/>
 </p>
 
 ## Android
@@ -37,10 +33,28 @@ The code is based on [Google android examples](https://github.com/tensorflow/ten
 Android `target` version is 26 while `minimum` is 21. Android Studio is required.
 
 Currently, we use `tensorflow-android` instead of `tf-lite`, and no gpu-optimisation is supported.
+**Mode**: portrait
+
+### Android Examples
+
+<p align="center">
+  <img src="images/im2.jpg" width="300" height="500"/>
+  <img src="images/im3.jpg" width="300" height="500"/>
+</p>
 
 ## iOS
 The demo on iOS has been developed by Giulio Zaccaroni.
+
 XCode is required to build the app, moreover you need to sign in with your AppleID and trust yourself as certified developer.
+
+**Mode**: landscape
+
+### iOS Examples
+
+<p align="center">
+  <img src="images/im4.PNG" width="300" height="500"/>
+  <img src="images/im5.PNG" width="300" height="500"/>
+</p>
 
 ## License
 The code provided in this repository has a demonstrative purpose only. You can download, modify and try it on your mobile phone with no restrictions. However, the trained model can not be used for scopes not covered by the [MatterPort’s](https://matterport.com/it/) license.
