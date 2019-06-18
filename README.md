@@ -21,7 +21,7 @@ More info about the work can be found at these links:
 * [PyDNet code](https://github.com/mattpoggi/pydnet)
 
 ## Model
-The network has been trained on [MatterPort](https://matterport.com/it/) dataset for 1.2M steps, using the BerHu loss on disparity labels offered by the dataset as supervision.
+The network has been trained on [MatterPort](https://matterport.com/it/) dataset for 1.2M steps, using the BerHu loss on Microsoft Kinect depth labels offered by the dataset as supervision.
 
 <p align="center">
   <img src="images/im0.jpg" width="300" height="500"/>
