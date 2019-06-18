@@ -53,8 +53,8 @@ XCode is required to build the app, moreover you need to sign in with your Apple
 ### iOS Examples
 
 <p align="center">
-  <img src="images/im4.PNG" width="300" height="500"/>
-  <img src="images/im5.PNG" width="300" height="500"/>
+  <img src="images/im4.PNG" width="300" height="500" data-rotate="90"/>
+  <img src="images/im5.PNG" width="300" height="500" data-rotate="90"/>
 </p>
 
 ## License
