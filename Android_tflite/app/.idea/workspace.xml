@@ -1,193 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b5d26bd-6b17-401e-8827-a212309d85de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/5.1.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/5.1.1/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/5.1.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/caches/build_file_checksums.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/caches/gradle_models.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_26_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_appcompat_v7_26_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_design_26_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_multidex_1_0_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_recyclerview_v7_26_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_support_annotations_26_0_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_support_compat_26_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_support_core_ui_26_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_support_core_utils_26_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_support_fragment_26_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_support_media_compat_26_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_support_v4_26_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_support_vector_drawable_26_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_android_support_transition_26_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/libraries/Gradle__org_tensorflow_tensorflow_android_1_13_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/Android.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/assets/optimized_pydnet++.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/java/unibo/cvlab/pydnet/ColorMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/java/unibo/cvlab/pydnet/Model.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/java/unibo/cvlab/pydnet/ModelFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/java/unibo/cvlab/pydnet/StreamActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/java/unibo/cvlab/pydnet/Utils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/java/unibo/cvlab/pydnet/demo/AutoFitTextureView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/java/unibo/cvlab/pydnet/demo/CameraActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/java/unibo/cvlab/pydnet/demo/CameraConnectionFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/java/unibo/cvlab/pydnet/demo/ImageUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/java/unibo/cvlab/pydnet/demo/LegacyCameraConnectionFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/java/unibo/cvlab/pydnet/demo/Logger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/java/unibo/cvlab/pydnet/demo/OverlayView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/java/unibo/cvlab/pydnet/demo/Size.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/layout/activity_camera.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/layout/activity_pydnet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/layout/activity_stream.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/layout/camera_connection_fragment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/layout/content_camera.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/local.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML.xcodeproj/.xcodesamplecode.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML.xcodeproj/project.xcworkspace/xcuserdata/filippoaleotti.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML.xcodeproj/xcshareddata/xcschemes/AppML.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/AppDelegate.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/AppML-Bridging-Header.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/AppIcon.appiconset/ItunesArtwork@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/CapturePhoto.imageset/CapturePhoto@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/CapturePhoto.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/CaptureStop.imageset/CaptureStop@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/CaptureStop.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/CaptureVideo.imageset/CaptureVideo@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/CaptureVideo.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/ColorFilterOff.imageset/ColorFilterOff@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/ColorFilterOff.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/ColorFilterOn.imageset/ColorFilterOn@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/ColorFilterOn.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/DepthOFF.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/DepthOFF.imageset/DepthOFF@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/DepthON.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/DepthON.imageset/DepthON@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/FlipCamera.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/FlipCamera.imageset/FlipCamera@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/LivePhotoOFF.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/LivePhotoOFF.imageset/LivePhotoOFF@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/LivePhotoON.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/LivePhotoON.imageset/LivePhotoON@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/MovieSelector.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/MovieSelector.imageset/MovieSelector@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/PhotoSelector.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/PhotoSelector.imageset/PhotoSelector@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/PortraitMatteOFF.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/PortraitMatteOFF.imageset/PortraitMatteOFF@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/PortraitMatteON.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/PortraitMatteON.imageset/PortraitMatteON@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/SettingsIcon.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Assets.xcassets/SettingsIcon.imageset/icons8-services-2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/CVPixelBuffer+clamp.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/DepthToColorMap.metal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/DepthToColorMapConverter.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/FilterRenderer.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Model/MonoNeuralNetwork.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Model/NeuralNetwork.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Model/StereoNeuralNetwork.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/NeuralNetworks/NeuralNetworks.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/NeuralNetworks/Pydnet/OptimizedPydnet.mlmodel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/NeuralNetworks/Pydnet/Pydnet.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/PhotoCaptureDelegate.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Storyboards/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/Storyboards/Base.lproj/Main.storyboard" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/View/Main/CameraViewController.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/View/NeuralNetworkFromNet/NeuralNetworkFromNetViewController.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../iOS/AppML/View/NeuralNetworkPicker/NeuralNetworkPickerViewController.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../images/im0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../images/im1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../images/im2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../images/im3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../images/im4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../images/im5.jpeg" beforeDir="false" />
-    </list>
+    <list default="true" id="5b5d26bd-6b17-401e-8827-a212309d85de" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/unibo/cvlab/pydnet/Model.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="53" column="73" lean-forward="true" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
+              <caret line="53" column="73" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -336,7 +150,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1985" height="1164" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.3298916" />
       <window_info id="Structure" side_tool="true" />
@@ -374,7 +187,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/unibo/cvlab/pydnet/Model.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="53" column="73" lean-forward="true" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
+          <caret line="53" column="73" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
         </state>
       </provider>
     </entry>

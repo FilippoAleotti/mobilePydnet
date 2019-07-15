@@ -23,9 +23,8 @@
 
 import tensorflow as tf
 
-# Hand-made leaky relu
 def leaky_relu(x, alpha=0.2):
-  return tf.maximum(x, alpha * x)
+  return tf.nn.leaky_relu(x, alpha=alpha)
 
 # 2D convolution wrapper
 def conv2d_leaky(x, kernel_shape, bias_shape, strides=1, relu=True, padding='SAME'):
