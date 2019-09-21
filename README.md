@@ -1,5 +1,7 @@
 # PyDNet on mobile devices
 
+[![Build Status](https://travis-ci.org/FilippoAleotti/mobilePydnet.svg?branch=master)](https://travis-ci.org/FilippoAleotti/mobilePydnet)
+
 This repository contains the source code to run PyDNet on mobile devices (`Android` and `iOS`)
 
 If you use this code in your projects, please cite our paper:
@@ -44,7 +46,7 @@ Currently, we use `tensorflow-android` instead of `tf-lite`, and no gpu-optimisa
 </p>
 
 ## iOS
-The demo on iOS has been developed by Giulio Zaccaroni.
+The demo on iOS has been developed by [Giulio Zaccaroni](https://github.com/GZaccaroni).
 
 XCode is required to build the app, moreover you need to sign in with your AppleID and trust yourself as certified developer.
 
@@ -57,5 +59,8 @@ XCode is required to build the app, moreover you need to sign in with your Apple
   <img src="images/im5.jpeg" width="300" height="500"/>
 </p>
 
-## License
-The code provided in this repository has a demonstrative purpose only. You can download, modify and try it on your mobile phone with no restrictions. However, the trained model can not be used for scopes not covered by the [MatterPort’s](https://matterport.com/it/) license.
+## Licenses
+
+The code provided in this repository has a demonstrative and academic purposes only. Even if we released this code using Apache License v2, pre-trained model on specific datasets may not be used for scopes not covered by their licenses.
+
+* [MatterPort’s](https://matterport.com/it/) license
