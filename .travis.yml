@@ -1,0 +1,59 @@
+language: android
+dist: trusty
+before_cache:
+- rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
+- rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+  - "$HOME/.gradle/caches/"
+  - "$HOME/.gradle/wrapper/"
+git:
+  depth: false
+env:
+  global:
+  - TERM=dumb
+  - ANDROID_API_LEVEL=26
+  - ANDROID_BUILD_TOOLS_VERSION=28.0.3
+  - ANDROID_ABI=armeabi-v7a
+  - secure: FlYUMCEY1nyQOZZUe0hADCax4MrKL7KvvCNWjMUL8bUc0E9MFmWzf+avLx73h53WlUzUibPuTW0hjMJ6sWv85H+edMfXngJCgSf54qAQpdDFfa3O9OiEQsxDGtnLB6GTmPFBYqqLq2ye+dnXuNSU1BO9wBA7qm9nWuK9MaPwD+SY9YyJcTrfMJj5IO0eHmbAgUD9BUqua8QzhvHjVgBpz3L8dWAOnR2IgaRE1udct3Q5F0b+vC8rmhjla0T22cHzsn6zaEIewUQV6JEsQrPVoIzT0mPxehnu5O3aYFEE09x9pkpEIJ6Mf1b31E2aVVpJfeugJhxrHq3ueIRq5/7GoWsgtDbT69ra48cxe3bGoWyrEQBmu3uxdXYbmcKbJOHnehV/DU9WuxwWLLc5i+e3M/MBC+CLVaMQM9An/lWGCsYxMlRWEVg8NXpEsSExAteoZ6MjlhAxqQhrk68HpLaOfVGX1z9zpMe0s5KygLjqD8Wfc/dLUy9IfAyh47iMUYIrmIaaU08U9QFKzwPaUcTcPMAZL4FIFMESoOfrndByP014OFZDdK+mZ9R4qejYEnJ3LM2/xq0Rygj3ml5z2b9mCl9A1vN/6aZauFs5UST6AdPa6prrCEiZLMjzXqvlpD1gsoJuuLB6bsX1uAF6RWucNvtSX9v3GWaI/sHDaX500x8=
+  - secure: NlZFUuowOVD8RroylkakgqFBzdZ9dzhkax4bmw8PdMggKj6DCRZbUbxtwCdEFEEQHWFiWcc43qYFDfbjDR1iwpPbOOaf+J4NtfGC0GVSQMQzTn1VEC8Q2Xu6gYnZ+mkptQ+nXQmuUx5Ayo0OF36teFWQ4/DHnZjDDuLePbU5ZZv1aLg2mf/NLbO6Zxev+Jwcu2jIFli/VMWv2zy2pSnDkc0s+DaG0oUiRSJkFdx2JIDPoBu3UHek7OBnqBTQyldrVf0cjEiQ3LCAKxstpNVuGbVRId/GZDUpVZpzsJfsmCnK5797yqFszti6QE2+R7Pb3Z1+LQIgXnpQw86jImBblgMT+9ESLQyVQ0QsPYOp39+iXyzSnt97Wx32vKTTpIz4BJu3ONJqSwZ515ocW5BRK0ujD3LLRyO3VtWSw6l2NH/mL68QYOCexwjoTrWJgP7Vs7j4wzWrBubE/Vifg/4Vn3A28t9fcKy8YRMJ9i5aetKQD4ucCAc+R+7xRf04qgF7XdTr3+s29w58ruy9sdFa9KTu8eSGEuWF5MiQ1uZpAQPywDuG5avn1G7YAltF2RsqNPGk+sbAO8wdg4EITik5+eTwwabPNKki30LrI4HsWkS1kUEmy5RPoQyt8KiGmr07ch+EnxbDIhVALTgadyYUXKXFWMYd9TEfG6CbanFvLDM=
+  cash: android
+android:
+  components:
+  - build-tools-$ANDROID_BUILD_TOOLS_VERSION
+  - android-$ANDROID_API_LEVEL
+  - sys-img-x86-android-26
+  licenses:
+  - android-sdk-preview-license-+
+  - android-sdk-license-.+
+  - google-gdk-license-.+
+script:
+- cd Android
+- "./gradlew build"
+before_install:
+- openssl aes-256-cbc -K $encrypted_22f535e15025_key -iv $encrypted_22f535e15025_iv
+  -in keystore.jks.enc -out keystore.jks -d
+before_deploy:
+- git config --local user.name "Filippo Aleotti"
+- git config --local user.email "filippoaleotti@yahoo.it"
+- if [[ $(git describe) == *"-"* ]]; then git tag $(git describe) || :; fi
+- cp $TRAVIS_BUILD_DIR/keystore.jks $HOME
+- cd app/build/outputs/apk/release
+- ls .
+- jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore $HOME/keystore.jks
+  -storepass $storepass -keypass $keypass app-release-unsigned.apk key
+- jarsigner -verify app-release-unsigned.apk
+- "${ANDROID_HOME}/build-tools/$ANDROID_BUILD_TOOLS_VERSION/zipalign -v 4 app-release-unsigned.apk
+  mobilePydnet.apk"
+deploy:
+  provider: releases
+  skip_cleanup: true
+  overwrite: true
+  file_glob: true
+  file: "$TRAVIS_BUILD_DIR/Android/app/build/outputs/apk/release/mobilePydnet.apk"
+  api_key:
+    secure: KHebEMqPaHp23xLvfCV/OsL/KPj7U1/ZYEu14V2RWZDYsO5vZ9I6qC8WCAXkdd503HypSlQeZnPL0LcEk6LukcNaIfS6SSSBOeG2VtBPUPfNihtbPP4+moChkflZ5RfOrPXVzhw0Gpm+yE7S59oVOsnHU978cq+Ts9tA4ciGk5id3jtIvRHHUtV70fSQk7B0qnS8LCfFoOzGuAV9lq9UL12gnPR72FZ4Nf8eC8XH98E/5fg9mOd9xFkV53Q1+FJe7WmOZapSVe43I3NNdWOeXMM8JttOSQ19co7TQGkgUXF7fUoftAsQyR4PT0Q5okz6cvkHk3mpdRH1cHzda/3rBDtW+0wFS/qAOTGwLWpIx9HFNcr3j32Ab26LbGtGfKP6Kdy94K2iJTavbZ2CX0dFttFKrk0V09f4gYHwAeDhTOdMFOCEzNrxTIO7NtX9kEXkXG22FWZIoinp0Et+9OKbooifXnn59NRL5MutBF0dHii0jV9zSR7gymx05XcneAC4ahXmARyBnzQTjPv03HhZy0LRXqDB8IUYQRSQhjQnBPC1hd0Ml0IwqPNGnLOkmY28tgTLbmn7aG+Z0CueD7m+lABd/jXz4N0cqyb5/GnWa/6zK+w6potVmhjA8G5ez+tthIF98ZNSSNeefIx/RIyLgysffLfdzb5LuyP9cZX1lS0=
+  on:
+    repo: FilippoAleotti/mobilePydnet
+    branch: master
+    tag: true
