@@ -20,22 +20,33 @@ limitations under the License.
 package unibo.cvlab.pydnet;
 
 import android.content.Context;
-import org.tensorflow.contrib.android.TensorFlowInferenceInterface;
+import android.content.res.AssetFileDescriptor;
+import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+
+import org.tensorflow.lite.Interpreter;
+
 import unibo.cvlab.pydnet.ModelFactory.GeneralModel;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.FloatBuffer;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import unibo.cvlab.pydnet.Utils.*;
 
-public class Model{
+public abstract class Model{
 
     protected final String checkpoint;
     protected Map<Scale, String> outputNodes;
     protected List<Resolution> validResolutions;
     protected ModelFactory.GeneralModel generalModel;
     protected String name;
-    protected TensorFlowInferenceInterface inferenceEngine;
     protected HashMap<String, float[]> results;
     protected HashMap<String, String> inputNodes;
 
@@ -45,8 +56,7 @@ public class Model{
         this.outputNodes = new HashMap<>();
         this.inputNodes = new HashMap<>();
         this.checkpoint = checkpoint;
-        this.inferenceEngine = new TensorFlowInferenceInterface(context.getAssets(), checkpoint);
-        validResolutions = new ArrayList<>();
+        this.validResolutions = new ArrayList<>();
         this.results = new HashMap<>();
 
     }
@@ -70,16 +80,8 @@ public class Model{
         return this.inputNodes.get(name);
     }
 
-    public float[] doInference(float[] input, Resolution resolution, Scale scale){
-        float[] output = new float[resolution.getHeight()*resolution.getWidth()];
-
-        this.inferenceEngine.feed(
-                getInputNode("image"), input, 1,
-                resolution.getHeight(), resolution.getWidth(), 3);
-        this.inferenceEngine.run(new String[]{this.outputNodes.get(scale)});
-        this.inferenceEngine.fetch(outputNodes.get(scale), output);
-        return output;
-    }
+    public abstract void prepare(Utils.Resolution resolution);
+    public abstract FloatBuffer doInference(Bitmap input, Utils.Resolution resolution, Utils.Scale scale);
 }
 
 

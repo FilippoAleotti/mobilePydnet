@@ -55,6 +55,8 @@ public abstract class CameraActivity extends Activity
 
     private boolean debug = false;
 
+    private Handler inferenceHandler;
+    private HandlerThread inferenceHandlerThread;
     private Handler handler;
     private HandlerThread handlerThread;
     private boolean useCamera2API;
@@ -160,16 +162,18 @@ public abstract class CameraActivity extends Activity
             rgbBytes = new int[previewWidth * previewHeight];
         }
         try {
+            if (isProcessingFrame) {
+                return;
+            }
+
             final Image image = reader.acquireLatestImage();
+
 
             if (image == null) {
                 return;
             }
 
-            if (isProcessingFrame) {
-                image.close();
-                return;
-            }
+
             isProcessingFrame = true;
             Trace.beginSection("imageAvailable");
             final Plane[] planes = image.getPlanes();
@@ -224,6 +228,10 @@ public abstract class CameraActivity extends Activity
         LOGGER.d("onResume " + this);
         super.onResume();
 
+        inferenceHandlerThread = new HandlerThread("inference");
+        inferenceHandlerThread.start();
+        inferenceHandler = new Handler(inferenceHandlerThread.getLooper());
+
         handlerThread = new HandlerThread("inference");
         handlerThread.start();
         handler = new Handler(handlerThread.getLooper());
@@ -238,8 +246,12 @@ public abstract class CameraActivity extends Activity
             finish();
         }
 
+        inferenceHandlerThread.quitSafely();
         handlerThread.quitSafely();
         try {
+            inferenceHandlerThread.join();
+            inferenceHandlerThread = null;
+            inferenceHandler = null;
             handlerThread.join();
             handlerThread = null;
             handler = null;
@@ -262,9 +274,15 @@ public abstract class CameraActivity extends Activity
         super.onDestroy();
     }
 
+    protected synchronized void runInferenceInBackground(final Runnable r) {
+        if (inferenceHandler != null) {
+            inferenceHandler.post(r);
+        }
+    }
+
     protected synchronized void runInBackground(final Runnable r) {
-        if (handler != null) {
-            handler.post(r);
+        if (inferenceHandler != null) {
+            inferenceHandler.post(r);
         }
     }
 
