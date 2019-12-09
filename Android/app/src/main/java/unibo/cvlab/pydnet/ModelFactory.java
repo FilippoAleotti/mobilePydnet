@@ -37,24 +37,33 @@ public class ModelFactory {
     public ModelFactory(Context context){
        this.context = context;
        this.models = new ArrayList<>();
-       models.add(createPydnetPP());
+       models.add(createLitePydnetPP());
     }
 
     public Model getModel(int index ){
         return models.get(index);
     }
 
-    private Model createPydnetPP(){
+    private Model createLitePydnetPP(){
         Model pydnetPP;
-        pydnetPP = new Model(context, GeneralModel.PYDNET_PP, "Pydnet++", "file:///android_asset/optimized_pydnet++.pb");
-        pydnetPP.addInputNode("image", "im0:0");
-        pydnetPP.addOutputNodes(Scale.HALF, "PSD/resize_images/ResizeBilinear:0");
-        pydnetPP.addOutputNodes(Scale.QUARTER, "PSD/resize_images_1/ResizeBilinear:0");
-        pydnetPP.addOutputNodes(Scale.HEIGHT, "PSD/resize_images_2/ResizeBilinear:0");
+        pydnetPP = new TensorflowLiteModel(context, GeneralModel.PYDNET_PP, "Pydnet++", "optimized_pydnet++.tflite");
+        pydnetPP.addInputNode("image", "im0");
+        pydnetPP.addOutputNodes(Scale.HALF, "PSD/resize_images/ResizeBilinear");
+        pydnetPP.addOutputNodes(Scale.QUARTER, "PSD/resize_images_1/ResizeBilinear");
+        pydnetPP.addOutputNodes(Scale.HEIGHT, "PSD/resize_images_2/ResizeBilinear");
         pydnetPP.addValidResolution(Resolution.RES4);
         return pydnetPP;
     }
-
+    private Model createPydnetPP(){
+        Model pydnetPP;
+        pydnetPP = new TensorflowModel(context, GeneralModel.PYDNET_PP, "Pydnet++", "optimized_pydnet++.pb");
+        pydnetPP.addInputNode("image", "im0");
+        pydnetPP.addOutputNodes(Scale.HALF, "PSD/resize_images/ResizeBilinear");
+        pydnetPP.addOutputNodes(Scale.QUARTER, "PSD/resize_images_1/ResizeBilinear");
+        pydnetPP.addOutputNodes(Scale.HEIGHT, "PSD/resize_images_2/ResizeBilinear");
+        pydnetPP.addValidResolution(Resolution.RES4);
+        return pydnetPP;
+    }
 }
 
 

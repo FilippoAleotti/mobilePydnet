@@ -20,16 +20,20 @@ limitations under the License.
 package unibo.cvlab.pydnet;
 
 import android.graphics.Color;
+import android.util.Log;
+
+import java.nio.FloatBuffer;
 import java.util.Arrays;
 import java.util.List;
 
 public class ColorMapper {
 
-    private float[] predictions;
+    private FloatBuffer predictions;
     private final float scaleFactor;
     private final boolean applyColorMap;
     private final List<String> colorMap;
     private int[] output;
+    private boolean isPrepared = false;
 
     public ColorMapper(float scaleFactor, boolean applyColorMap){
         this.scaleFactor = scaleFactor;
@@ -49,31 +53,40 @@ public class ColorMapper {
 
         @Override
         public void run() {
-            int counter = start;
-            for (float prediction : Arrays.copyOfRange(predictions,start,end)) {
+            for(int i = start; i < end; i++){
+                float prediction = predictions.get(i);
                 if (applyColorMap) {
                     int colorIndex =  (int)(prediction * scaleFactor);
                     colorIndex = Math.min(Math.max(colorIndex, 0), colorMap.size() - 1);
-                    output[counter] = Color.parseColor(colorMap.get(colorIndex));
+                    output[i] = Color.parseColor(colorMap.get(colorIndex));
                 } else
-                    output[counter] =  (int) (prediction * scaleFactor);
-                counter +=1;
+                    output[i] =  (int) (prediction * scaleFactor);
             }
         }
     }
 
-    public int[] applyColorMap(float[] inference, int numberThread) {
+    public void prepare(Utils.Resolution resolution){
+        this.output = new int[resolution.getHeight()*resolution.getWidth()*4];
+        isPrepared = true;
+    }
+    public int[] applyColorMap(FloatBuffer inference, int numberThread) {
+        if (!isPrepared) {
+            throw new RuntimeException("ColorMapper is not prepared.");
+        }
+
         // Maybe a threadPool is better, since doing so every time threads are created and destroyed.
         // However, in this way is really easy handling the thread index
+        inference.rewind();
         this.predictions = inference;
-        this.output = new int[predictions.length];
-        int length = Math.round(predictions.length / numberThread);
+        int inferenceLength = inference.remaining();
+
+        int length = Math.round(inferenceLength / numberThread);
         Thread[] pool = new Thread[numberThread];
 
         for (int index = 0; index < numberThread; index++) {
             int current_start = index*length;
             int current_end = current_start + length;
-            current_end = Math.min(current_end, predictions.length);
+            current_end = Math.min(current_end, inferenceLength);
             pool[index] = new Thread(new Runner(current_start, current_end));
             pool[index].start();
         }
@@ -84,7 +97,7 @@ public class ColorMapper {
         }
         catch (InterruptedException e){
 
-            return new int[predictions.length];
+            return new int[inferenceLength];
         }
 
     }

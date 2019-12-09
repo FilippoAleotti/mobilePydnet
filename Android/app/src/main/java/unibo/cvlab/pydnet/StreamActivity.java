@@ -34,6 +34,9 @@ import android.util.Size;
 import android.media.ImageReader.OnImageAvailableListener;
 import android.view.Display;
 import android.view.View;
+
+import java.nio.FloatBuffer;
+
 import unibo.cvlab.pydnet.demo.AutoFitTextureView;
 import unibo.cvlab.pydnet.demo.CameraActivity;
 import unibo.cvlab.pydnet.demo.ImageUtils;
@@ -122,7 +125,9 @@ public class StreamActivity extends CameraActivity implements OnImageAvailableLi
         setContentView(R.layout.activity_stream);
         modelFactory = new ModelFactory(getApplicationContext());
         currentModel = modelFactory.getModel(0);
+        currentModel.prepare(resolution);
         colorMapper = new ColorMapper(COLOR_SCALE_FACTOR ,applyColormap);
+        colorMapper.prepare(resolution);
     }
 
     @Override
@@ -130,24 +135,40 @@ public class StreamActivity extends CameraActivity implements OnImageAvailableLi
         originalFrame.setPixels(getRgbBytes(), 0, previewWidth, 0, 0, previewWidth, previewHeight);
         final Canvas canvas = new Canvas(croppedFrame);
         canvas.drawBitmap(originalFrame, frameToCropTransform, null);
-        runInBackground(
+        runInferenceInBackground(
             new Runnable() {
                 @Override
                 public void run() {
-                    float[] pixels = Utils.getPixelFromBitmap(croppedFrame);
-                    doInference(pixels);
-                    requestRender();
+                    final FloatBuffer inferred = doInference(croppedFrame);
+                    runInBackground(
+                            new Runnable() {
+                                @Override
+                                public void run() {
+                                    renderInferredFloatBuffer(inferred);
+                                    requestRender();
+                                }
+                            }
+                    );
                     readyForNextImage();
                 }
             });
     }
 
-    private void doInference(float[] input){
-        float[] inference;
-        inference = currentModel.doInference(input, resolution, scale);
+    private FloatBuffer doInference(Bitmap input){
+
+        return currentModel.doInference(croppedFrame, resolution, scale);
+    }
+    private void renderInferredFloatBuffer(FloatBuffer inference){
+
+        inference = currentModel.doInference(croppedFrame, resolution, scale);
+
         int[] coloredInference = colorMapper.applyColorMap(inference, NUMBER_THREADS);
+
         outputDisp.setPixels(coloredInference, 0, resolution.getWidth(), 0, 0, resolution.getWidth(), resolution.getHeight());
+
         outputDispResized = Bitmap.createScaledBitmap(outputDisp,  halfScreenSize.getWidth(), halfScreenSize.getHeight(), false);
+
+
         outputRGB = Bitmap.createScaledBitmap(croppedFrame,  halfScreenSize.getWidth(), halfScreenSize.getHeight(), false);
     }
 }

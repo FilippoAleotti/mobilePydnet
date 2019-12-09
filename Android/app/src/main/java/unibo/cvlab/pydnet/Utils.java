@@ -22,6 +22,7 @@ package unibo.cvlab.pydnet;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 
+import java.nio.FloatBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -341,22 +342,5 @@ public class Utils {
         color.add("#0D0887");
 
         return color;
-    }
-
-    public static float[] getPixelFromBitmap(Bitmap frame){
-        int numberOfPixels = frame.getWidth()*frame.getHeight()*3;
-        int[] pixels = new int[frame.getWidth()*frame.getHeight()];
-        frame.getPixels(pixels, 0, frame.getWidth(), 0, 0, frame.getWidth(), frame.getHeight());
-
-        float[] output = new float[numberOfPixels];
-
-        int i = 0;
-        for (int pixel : pixels) {
-            output[i * 3] = Color.red(pixel) /(float)255.;
-            output[i * 3 + 1] = Color.green(pixel) / (float)255.;
-            output[i * 3+2] = Color.blue(pixel) / (float)255.;
-            i+=1;
-        }
-        return output;
     }
 }
