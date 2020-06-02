@@ -12,11 +12,11 @@ Moreover, we build also a web-based demonstration of the same network! You can t
 The model runs directly on your browser, so anything to install! 
 
 <p align="center">
-  <img src="assets/live.png" width="300" height="250"/>
+  <img src="assets/live.png" width="500" height="450"/>
 </p>
 
 ## iOS
-The demo on iOS has been developed by [Giulio Zaccaroni](https://github.com/GZaccaroni).
+The iOS demo has been developed by [Giulio Zaccaroni](https://github.com/GZaccaroni).
 
 XCode is required to build the app, moreover you need to sign in with your AppleID and trust yourself as certified developer.
 
