@@ -3,48 +3,54 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C45960F228ACC4100529D02 /* OptimizedPydnet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3C45960E228ACC4100529D02 /* OptimizedPydnet.mlmodel */; };
+		3C04E71122EC943000EA471B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C04E71022EC943000EA471B /* CoreImage.framework */; };
+		3C04E71322EC943800EA471B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C04E71222EC943800EA471B /* CoreVideo.framework */; };
+		3C04E71522EC943C00EA471B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C04E71422EC943C00EA471B /* Accelerate.framework */; };
+		3C140CA32322CD8F00D27DFD /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 3C140CA22322CD8F00D27DFD /* RxRelay */; };
+		3C140CA52322CD8F00D27DFD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3C140CA42322CD8F00D27DFD /* RxSwift */; };
+		3C140CA72322CD8F00D27DFD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 3C140CA62322CD8F00D27DFD /* RxCocoa */; };
+		3C31317F2321499A006F9963 /* PreviewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C31317E2321499A006F9963 /* PreviewMode.swift */; };
+		3C44D82B22FEBBE100F57013 /* UIAlertController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C44D82A22FEBBE100F57013 /* UIAlertController+Ext.swift */; };
 		3C5C90332299A75800C2E814 /* DepthToColorMap.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3C5C90322299A75800C2E814 /* DepthToColorMap.metal */; };
-		3C8EDBA422A0FA0700B73004 /* NeuralNetworkFromNetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8EDBA322A0FA0700B73004 /* NeuralNetworkFromNetViewController.swift */; };
-		3CC9262322991C22001C75CE /* DepthToColorMapConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9262222991C22001C75CE /* DepthToColorMapConverter.swift */; };
-		3CC9262522991C3A001C75CE /* FilterRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9262422991C3A001C75CE /* FilterRenderer.swift */; };
-		3CF5D32F229FFBC50028FCD9 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF5D32E229FFBC50028FCD9 /* PhotoCaptureDelegate.swift */; };
-		3CF5D331229FFBE20028FCD9 /* CVPixelBuffer+clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF5D330229FFBE20028FCD9 /* CVPixelBuffer+clamp.swift */; };
-		3CF695AC229FBD3800E4115E /* NeuralNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF695AB229FBD3800E4115E /* NeuralNetwork.swift */; };
-		3CF695AE229FBD5C00E4115E /* StereoNeuralNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF695AD229FBD5C00E4115E /* StereoNeuralNetwork.swift */; };
-		3CF695B1229FBD7400E4115E /* MonoNeuralNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF695B0229FBD7400E4115E /* MonoNeuralNetwork.swift */; };
-		3CF695B5229FBED800E4115E /* Pydnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF695B4229FBED800E4115E /* Pydnet.swift */; };
-		3CF695B7229FC38300E4115E /* NeuralNetworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF695B6229FC38300E4115E /* NeuralNetworks.swift */; };
-		3CF695BF229FC54F00E4115E /* NeuralNetworkPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF695BE229FC54F00E4115E /* NeuralNetworkPickerViewController.swift */; };
+		3C5EFCCE2320680E004F6F7A /* RxSwiftBidirectionalBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EFCCD2320680E004F6F7A /* RxSwiftBidirectionalBinding.swift */; };
+		3C5EFCD02320F208004F6F7A /* UITextView+textColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EFCCF2320F208004F6F7A /* UITextView+textColor.swift */; };
+		3C6BB34B2322E7E70041D581 /* CVPixelBuffer+createCGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6BB34A2322E7E70041D581 /* CVPixelBuffer+createCGImage.swift */; };
+		3C6D91E6232132BF008D987C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D91E5232132BF008D987C /* MainViewModel.swift */; };
+		3CB56B5C2479566A00143CD8 /* Pydnet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3CB56B5B2479566A00143CD8 /* Pydnet.mlmodel */; };
+		3CC9262322991C22001C75CE /* MetalColorMapApplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9262222991C22001C75CE /* MetalColorMapApplier.swift */; };
+		3CE77C082325061A00DBAAD5 /* ColorMapApplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE77C072325061A00DBAAD5 /* ColorMapApplier.swift */; };
+		3CEECB0E2486A7FF00535292 /* CameraStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEECB0A2486A7FF00535292 /* CameraStream.swift */; };
+		3CEECB102486A7FF00535292 /* CGImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEECB0D2486A7FF00535292 /* CGImage+CVPixelBuffer.swift */; };
 		7AA677151CFF765600B353FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677141CFF765600B353FB /* AppDelegate.swift */; };
-		7AA677171CFF765600B353FB /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677161CFF765600B353FB /* CameraViewController.swift */; };
+		7AA677171CFF765600B353FB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677161CFF765600B353FB /* MainViewController.swift */; };
 		7AA6771A1CFF765600B353FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA677181CFF765600B353FB /* Main.storyboard */; };
 		7AA6771C1CFF765600B353FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA6771B1CFF765600B353FB /* Assets.xcassets */; };
 		7AA6771F1CFF765600B353FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA6771D1CFF765600B353FB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3C45960E228ACC4100529D02 /* OptimizedPydnet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = OptimizedPydnet.mlmodel; path = AppML/NeuralNetworks/Pydnet/OptimizedPydnet.mlmodel; sourceTree = SOURCE_ROOT; };
+		3C04E71022EC943000EA471B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		3C04E71222EC943800EA471B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3C04E71422EC943C00EA471B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		3C31317E2321499A006F9963 /* PreviewMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMode.swift; sourceTree = "<group>"; };
+		3C44D82A22FEBBE100F57013 /* UIAlertController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Ext.swift"; sourceTree = "<group>"; };
 		3C5C90322299A75800C2E814 /* DepthToColorMap.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = DepthToColorMap.metal; sourceTree = "<group>"; };
-		3C8EDBA322A0FA0700B73004 /* NeuralNetworkFromNetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetworkFromNetViewController.swift; sourceTree = "<group>"; };
-		3CC9262222991C22001C75CE /* DepthToColorMapConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthToColorMapConverter.swift; sourceTree = "<group>"; };
-		3CC9262422991C3A001C75CE /* FilterRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRenderer.swift; sourceTree = "<group>"; };
-		3CC92629229922FD001C75CE /* AppML-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppML-Bridging-Header.h"; sourceTree = "<group>"; };
-		3CF5D32E229FFBC50028FCD9 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
-		3CF5D330229FFBE20028FCD9 /* CVPixelBuffer+clamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+clamp.swift"; sourceTree = "<group>"; };
-		3CF695AB229FBD3800E4115E /* NeuralNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetwork.swift; sourceTree = "<group>"; };
-		3CF695AD229FBD5C00E4115E /* StereoNeuralNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StereoNeuralNetwork.swift; sourceTree = "<group>"; };
-		3CF695B0229FBD7400E4115E /* MonoNeuralNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoNeuralNetwork.swift; sourceTree = "<group>"; };
-		3CF695B4229FBED800E4115E /* Pydnet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pydnet.swift; sourceTree = "<group>"; };
-		3CF695B6229FC38300E4115E /* NeuralNetworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetworks.swift; sourceTree = "<group>"; };
-		3CF695BE229FC54F00E4115E /* NeuralNetworkPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetworkPickerViewController.swift; sourceTree = "<group>"; };
-		7AA677111CFF765600B353FB /* AppML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppML.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5EFCCD2320680E004F6F7A /* RxSwiftBidirectionalBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftBidirectionalBinding.swift; sourceTree = "<group>"; };
+		3C5EFCCF2320F208004F6F7A /* UITextView+textColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+textColor.swift"; sourceTree = "<group>"; };
+		3C6BB34A2322E7E70041D581 /* CVPixelBuffer+createCGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+createCGImage.swift"; sourceTree = "<group>"; };
+		3C6D91E5232132BF008D987C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		3CB56B5B2479566A00143CD8 /* Pydnet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Pydnet.mlmodel; path = AppML/Models/Pydnet.mlmodel; sourceTree = SOURCE_ROOT; };
+		3CC9262222991C22001C75CE /* MetalColorMapApplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalColorMapApplier.swift; sourceTree = "<group>"; };
+		3CE77C072325061A00DBAAD5 /* ColorMapApplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMapApplier.swift; sourceTree = "<group>"; };
+		3CEECB0A2486A7FF00535292 /* CameraStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraStream.swift; sourceTree = "<group>"; };
+		3CEECB0D2486A7FF00535292 /* CGImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		7AA677111CFF765600B353FB /* MobilePydnet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobilePydnet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA677141CFF765600B353FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7AA677161CFF765600B353FB /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		7AA677161CFF765600B353FB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7AA677191CFF765600B353FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AA6771B1CFF765600B353FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AA6771E1CFF765600B353FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +62,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C140CA52322CD8F00D27DFD /* RxSwift in Frameworks */,
+				3C140CA32322CD8F00D27DFD /* RxRelay in Frameworks */,
+				3C04E71522EC943C00EA471B /* Accelerate.framework in Frameworks */,
+				3C140CA72322CD8F00D27DFD /* RxCocoa in Frameworks */,
+				3C04E71122EC943000EA471B /* CoreImage.framework in Frameworks */,
+				3C04E71322EC943800EA471B /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,47 +81,79 @@
 			name = Configuration;
 			sourceTree = "<group>";
 		};
-		3C8EDBA222A0F9D400B73004 /* NeuralNetworkFromNet */ = {
+		3C3FBB7F23225E8800DA8B32 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				3C8EDBA322A0FA0700B73004 /* NeuralNetworkFromNetViewController.swift */,
+				3C44D82A22FEBBE100F57013 /* UIAlertController+Ext.swift */,
 			);
-			path = NeuralNetworkFromNet;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		3CF695AF229FBD6400E4115E /* Model */ = {
+		3C5EFCC823205F50004F6F7A /* GraphicLayer */ = {
 			isa = PBXGroup;
 			children = (
-				3CF695AB229FBD3800E4115E /* NeuralNetwork.swift */,
-				3CF695AD229FBD5C00E4115E /* StereoNeuralNetwork.swift */,
-				3CF695B0229FBD7400E4115E /* MonoNeuralNetwork.swift */,
+				3CE77C072325061A00DBAAD5 /* ColorMapApplier.swift */,
+				3CC9262222991C22001C75CE /* MetalColorMapApplier.swift */,
+				3C5C90322299A75800C2E814 /* DepthToColorMap.metal */,
 			);
-			path = Model;
+			path = GraphicLayer;
 			sourceTree = "<group>";
 		};
-		3CF695B2229FBEB400E4115E /* NeuralNetworks */ = {
+		3C5EFCCB232067F7004F6F7A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3CF695B6229FC38300E4115E /* NeuralNetworks.swift */,
-				3CF695B3229FBECC00E4115E /* Pydnet */,
+				3C6BB3472322E7BD0041D581 /* CV */,
+				3C3FBB7F23225E8800DA8B32 /* UI */,
+				3C5EFCCC232067FF004F6F7A /* RxSwift */,
 			);
-			path = NeuralNetworks;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		3CF695B3229FBECC00E4115E /* Pydnet */ = {
+		3C5EFCCC232067FF004F6F7A /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
-				3C45960E228ACC4100529D02 /* OptimizedPydnet.mlmodel */,
-				3CF695B4229FBED800E4115E /* Pydnet.swift */,
+				3C5EFCCD2320680E004F6F7A /* RxSwiftBidirectionalBinding.swift */,
+				3C5EFCCF2320F208004F6F7A /* UITextView+textColor.swift */,
 			);
-			path = Pydnet;
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		3C6BB3442322E7680041D581 /* DefaultNeuralNetworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CB56B5B2479566A00143CD8 /* Pydnet.mlmodel */,
+			);
+			path = DefaultNeuralNetworks;
+			sourceTree = "<group>";
+		};
+		3C6BB3472322E7BD0041D581 /* CV */ = {
+			isa = PBXGroup;
+			children = (
+				3C6BB34A2322E7E70041D581 /* CVPixelBuffer+createCGImage.swift */,
+			);
+			path = CV;
+			sourceTree = "<group>";
+		};
+		3CEECB092486A7F100535292 /* CameraLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3CEECB0C2486A7FF00535292 /* Extensions */,
+				3CEECB0A2486A7FF00535292 /* CameraStream.swift */,
+			);
+			path = CameraLayer;
+			sourceTree = "<group>";
+		};
+		3CEECB0C2486A7FF00535292 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3CEECB0D2486A7FF00535292 /* CGImage+CVPixelBuffer.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		3CF695B8229FC4CE00E4115E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3C8EDBA222A0F9D400B73004 /* NeuralNetworkFromNet */,
-				3CF695BB229FC50E00E4115E /* NeuralNetworkPicker */,
 				3CF695B9229FC4DE00E4115E /* Main */,
 			);
 			path = View;
@@ -118,7 +162,9 @@
 		3CF695B9229FC4DE00E4115E /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				7AA677161CFF765600B353FB /* CameraViewController.swift */,
+				7AA677161CFF765600B353FB /* MainViewController.swift */,
+				3C6D91E5232132BF008D987C /* MainViewModel.swift */,
+				3C31317E2321499A006F9963 /* PreviewMode.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -132,27 +178,20 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		3CF695BB229FC50E00E4115E /* NeuralNetworkPicker */ = {
-			isa = PBXGroup;
-			children = (
-				3CF695BE229FC54F00E4115E /* NeuralNetworkPickerViewController.swift */,
-			);
-			path = NeuralNetworkPicker;
-			sourceTree = "<group>";
-		};
 		7AA677081CFF765500B353FB = {
 			isa = PBXGroup;
 			children = (
 				7AA677131CFF765600B353FB /* AppML */,
 				7AA677121CFF765600B353FB /* Products */,
 				2563FCD02563FC9000000001 /* Configuration */,
+				EF473959B157DAEEB0DB064A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		7AA677121CFF765600B353FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7AA677111CFF765600B353FB /* AppML.app */,
+				7AA677111CFF765600B353FB /* MobilePydnet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,20 +200,26 @@
 			isa = PBXGroup;
 			children = (
 				7AA677141CFF765600B353FB /* AppDelegate.swift */,
-				3C5C90322299A75800C2E814 /* DepthToColorMap.metal */,
-				3CC9262222991C22001C75CE /* DepthToColorMapConverter.swift */,
-				3CC92629229922FD001C75CE /* AppML-Bridging-Header.h */,
-				3CC9262422991C3A001C75CE /* FilterRenderer.swift */,
-				3CF5D32E229FFBC50028FCD9 /* PhotoCaptureDelegate.swift */,
-				3CF5D330229FFBE20028FCD9 /* CVPixelBuffer+clamp.swift */,
+				3C6BB3442322E7680041D581 /* DefaultNeuralNetworks */,
+				3CEECB092486A7F100535292 /* CameraLayer */,
+				3C5EFCC823205F50004F6F7A /* GraphicLayer */,
 				3CF695B8229FC4CE00E4115E /* View */,
-				3CF695B2229FBEB400E4115E /* NeuralNetworks */,
-				3CF695AF229FBD6400E4115E /* Model */,
 				3CF695BA229FC4F700E4115E /* Storyboards */,
+				3C5EFCCB232067F7004F6F7A /* Extensions */,
 				7AA6771B1CFF765600B353FB /* Assets.xcassets */,
 				7AA677201CFF765600B353FB /* Info.plist */,
 			);
 			path = AppML;
+			sourceTree = "<group>";
+		};
+		EF473959B157DAEEB0DB064A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C04E71422EC943C00EA471B /* Accelerate.framework */,
+				3C04E71222EC943800EA471B /* CoreVideo.framework */,
+				3C04E71022EC943000EA471B /* CoreImage.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +238,13 @@
 			dependencies = (
 			);
 			name = AppML;
+			packageProductDependencies = (
+				3C140CA22322CD8F00D27DFD /* RxRelay */,
+				3C140CA42322CD8F00D27DFD /* RxSwift */,
+				3C140CA62322CD8F00D27DFD /* RxCocoa */,
+			);
 			productName = AVCam;
-			productReference = 7AA677111CFF765600B353FB /* AppML.app */;
+			productReference = 7AA677111CFF765600B353FB /* MobilePydnet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +259,6 @@
 				TargetAttributes = {
 					7AA677101CFF765500B353FB = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = TD7S8QYFSY;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
@@ -224,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 7AA677081CFF765500B353FB;
+			packageReferences = (
+				3C140CA12322CD8F00D27DFD /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 7AA677121CFF765600B353FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -251,21 +303,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CC9262322991C22001C75CE /* DepthToColorMapConverter.swift in Sources */,
-				3CF5D331229FFBE20028FCD9 /* CVPixelBuffer+clamp.swift in Sources */,
-				3CF5D32F229FFBC50028FCD9 /* PhotoCaptureDelegate.swift in Sources */,
-				3CF695B5229FBED800E4115E /* Pydnet.swift in Sources */,
-				3C45960F228ACC4100529D02 /* OptimizedPydnet.mlmodel in Sources */,
+				3CEECB102486A7FF00535292 /* CGImage+CVPixelBuffer.swift in Sources */,
+				3CC9262322991C22001C75CE /* MetalColorMapApplier.swift in Sources */,
+				3C5EFCCE2320680E004F6F7A /* RxSwiftBidirectionalBinding.swift in Sources */,
+				3CB56B5C2479566A00143CD8 /* Pydnet.mlmodel in Sources */,
+				3CEECB0E2486A7FF00535292 /* CameraStream.swift in Sources */,
+				3C5EFCD02320F208004F6F7A /* UITextView+textColor.swift in Sources */,
+				3C6BB34B2322E7E70041D581 /* CVPixelBuffer+createCGImage.swift in Sources */,
 				3C5C90332299A75800C2E814 /* DepthToColorMap.metal in Sources */,
-				3CF695B1229FBD7400E4115E /* MonoNeuralNetwork.swift in Sources */,
-				3CC9262522991C3A001C75CE /* FilterRenderer.swift in Sources */,
-				3CF695B7229FC38300E4115E /* NeuralNetworks.swift in Sources */,
-				7AA677171CFF765600B353FB /* CameraViewController.swift in Sources */,
-				3CF695BF229FC54F00E4115E /* NeuralNetworkPickerViewController.swift in Sources */,
+				7AA677171CFF765600B353FB /* MainViewController.swift in Sources */,
+				3C31317F2321499A006F9963 /* PreviewMode.swift in Sources */,
+				3CE77C082325061A00DBAAD5 /* ColorMapApplier.swift in Sources */,
 				7AA677151CFF765600B353FB /* AppDelegate.swift in Sources */,
-				3CF695AC229FBD3800E4115E /* NeuralNetwork.swift in Sources */,
-				3C8EDBA422A0FA0700B73004 /* NeuralNetworkFromNetViewController.swift in Sources */,
-				3CF695AE229FBD5C00E4115E /* StereoNeuralNetwork.swift in Sources */,
+				3C6D91E6232132BF008D987C /* MainViewModel.swift in Sources */,
+				3C44D82B22FEBBE100F57013 /* UIAlertController+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +448,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -410,17 +462,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = TD7S8QYFSY;
 				INFOPLIST_FILE = AppML/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.gzaccaroni.AppML;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LD_VERIFY_BITCODE = NO;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = it.filippoaleotti;
+				PRODUCT_NAME = MobilePydnet;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "AppML/AppML-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -431,16 +490,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = TD7S8QYFSY;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = ZF4U32B6GT;
 				INFOPLIST_FILE = AppML/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.gzaccaroni.AppML;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LD_VERIFY_BITCODE = NO;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = it.gzaccaroni.mlapp;
+				PRODUCT_NAME = MobilePydnet;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "AppML/AppML-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -467,6 +533,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3C140CA12322CD8F00D27DFD /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3C140CA22322CD8F00D27DFD /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C140CA12322CD8F00D27DFD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		3C140CA42322CD8F00D27DFD /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C140CA12322CD8F00D27DFD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		3C140CA62322CD8F00D27DFD /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C140CA12322CD8F00D27DFD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7AA677091CFF765500B353FB /* Project object */;
 }

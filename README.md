@@ -1,8 +1,31 @@
-# PyDNet on mobile devices
+# PyDNet on mobile devices v2.0
+This repository contains the source code to run PyDNet on mobile devices.
 
-[![Build Status](https://travis-ci.org/FilippoAleotti/mobilePydnet.svg?branch=master)](https://travis-ci.org/FilippoAleotti/mobilePydnet)
+# LICENSE
+Code is licensed under APACHE version 2.0 license.
+Models can be used for research purposes only.
 
-This repository contains the source code to run PyDNet on mobile devices (`Android` and `iOS`)
+# What's new?
+In v2.0, we changed the procedure and the data used for training. More information will be provided soon...
+
+Moreover, we build also a web-based demonstration of the same network! You can try it now [here](https://filippoaleotti.github.io/demo_live/).
+The model runs directly on your browser, so anything to install! 
+
+<p align="center">
+  <img src="assets/live.png" width="300" height="250"/>
+</p>
+
+## iOS
+The demo on iOS has been developed by [Giulio Zaccaroni](https://github.com/GZaccaroni).
+
+XCode is required to build the app, moreover you need to sign in with your AppleID and trust yourself as certified developer.
+
+![](assets/ios.gif)
+
+
+## Android
+The code will be released soon
+
 
 If you use this code in your projects, please cite our paper:
 
@@ -22,45 +45,6 @@ More info about the work can be found at these links:
 * [PyDNet paper](https://arxiv.org/pdf/1806.11430.pdf)
 * [PyDNet code](https://github.com/mattpoggi/pydnet)
 
-## Model
-The network has been trained on [MatterPort](https://matterport.com/it/) dataset for 1.2M steps, using the BerHu loss on Microsoft Kinect depth labels offered by the dataset as supervision.
+# Contacts
 
-<p align="center">
-  <img src="images/im0.jpg" width="300" height="500"/>
-  <img src="images/im1.jpg" width="300" height="500"/>
-</p>
-
-## Android
-The code is based on [Google android examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android).
-Android `target` version is 26 while `minimum` is 21. Android Studio is required.
-
-Currently, we use `tensorflow-android` instead of `tf-lite`, and no gpu-optimisation is supported.
-
-**Mode**: portrait
-
-### Android Examples
-
-<p align="center">
-  <img src="images/im2.jpg" width="300" height="500"/>
-  <img src="images/im3.jpg" width="300" height="500"/>
-</p>
-
-## iOS
-The demo on iOS has been developed by [Giulio Zaccaroni](https://github.com/GZaccaroni).
-
-XCode is required to build the app, moreover you need to sign in with your AppleID and trust yourself as certified developer.
-
-**Mode**: landscape
-
-### iOS Examples
-
-<p align="center">
-  <img src="images/im4.png" width="300" height="500"/>
-  <img src="images/im5.jpeg" width="300" height="500"/>
-</p>
-
-## Licenses
-
-The code provided in this repository has a demonstrative and academic purposes only. Even if we released this code using Apache License v2, pre-trained model on specific datasets may not be used for scopes not covered by their licenses.
-
-* [MatterPort’s](https://matterport.com/it/) license
+For questions, please send an email to filippo.aleotti2@unibo.it
