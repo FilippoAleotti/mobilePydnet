@@ -1,10 +1,6 @@
 # PyDNet on mobile devices v2.0
 This repository contains the source code to run PyDNet on mobile devices.
 
-# LICENSE
-Code is licensed under APACHE version 2.0 license.
-Models can be used for research purposes only.
-
 # What's new?
 In v2.0, we changed the procedure and the data used for training. More information will be provided soon...
 
@@ -27,7 +23,11 @@ XCode is required to build the app, moreover you need to sign in with your Apple
 ## Android
 The code will be released soon
 
+# License
+Code is licensed under APACHE version 2.0 license.
+Weights of the network can be used for research purposes only.
 
+# Contacts and links
 If you use this code in your projects, please cite our paper:
 
 ```
@@ -45,7 +45,5 @@ If you use this code in your projects, please cite our paper:
 More info about the work can be found at these links:
 * [PyDNet paper](https://arxiv.org/pdf/1806.11430.pdf)
 * [PyDNet code](https://github.com/mattpoggi/pydnet)
-
-# Contacts
 
 For questions, please send an email to filippo.aleotti2@unibo.it
