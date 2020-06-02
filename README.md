@@ -23,6 +23,7 @@ XCode is required to build the app, moreover you need to sign in with your Apple
 <p align="center">
 <img alt="ios" src="assets/ios.gif">
 </p>
+
 ## Android
 The code will be released soon
 
