@@ -28,8 +28,6 @@ XCode is required to build the app, moreover you need to sign in with your Apple
 </div>
 
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/LRfGablYZNw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## Android
 The code will be released soon
 
