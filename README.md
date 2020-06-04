@@ -16,17 +16,12 @@ The iOS demo has been developed by [Giulio Zaccaroni](https://github.com/GZaccar
 
 XCode is required to build the app, moreover you need to sign in with your AppleID and trust yourself as certified developer.
 
-<div class="container">
-<div class="row">
-<div class="col-md-6">
+<p align="center">
 <img alt="ios" src="assets/ios.gif">
-</div>
-<div class="col-md-6">
-<img alt="youtube" src="https://img.youtube.com/vi/LRfGablYZNw/3.jpg">
-</div>
-</div>
-</div>
-
+</p>
+<p align="center">
+<a href="https://www.youtube.com/watch?v=LRfGablYZNw&feature=youtu.be"><img alt="youtube" src="https://img.youtube.com/vi/LRfGablYZNw/maxresdefault.jpg" class="img-fluid"></a>
+</p>
 
 ## Android
 The code will be released soon
