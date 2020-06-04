@@ -16,9 +16,17 @@ The iOS demo has been developed by [Giulio Zaccaroni](https://github.com/GZaccar
 
 XCode is required to build the app, moreover you need to sign in with your AppleID and trust yourself as certified developer.
 
-<p align="center">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
 <img alt="ios" src="assets/ios.gif">
-</p>
+</div>
+<div class="col-md-6">
+<img alt="youtube" src="https://img.youtube.com/vi/LRfGablYZNw/3.jpg">
+</div>
+</div>
+</div>
+
 
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/LRfGablYZNw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
