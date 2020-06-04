@@ -20,7 +20,7 @@ XCode is required to build the app, moreover you need to sign in with your Apple
 <img alt="ios" src="assets/ios.gif">
 </p>
 
-<iframe class="col-md-6" width="100%" height="315" src="https://www.youtube.com/watch?v=LRfGablYZNw&feature=youtu.be" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/LRfGablYZNw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Android
 The code will be released soon
