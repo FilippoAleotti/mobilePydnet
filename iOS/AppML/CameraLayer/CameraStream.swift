@@ -88,7 +88,7 @@ public class CameraStream: NSObject {
         session.addOutput(videoOutput)
         
         let videoConnection = videoOutput.connection(with: .video)
-        videoConnection?.videoOrientation = .portrait
+        videoConnection?.videoOrientation = .landscapeLeft
         
         session.commitConfiguration()
         
