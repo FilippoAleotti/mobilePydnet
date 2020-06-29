@@ -3,3 +3,8 @@ Pillow==7.1.2
 tqdm==4.46.0
 opencv-python==4.2.0.34
 matplotlib==3.2.1
+tf2onnx==1.5.6
+tfcoreml==1.1
+onnx==1.6.0
+onnx-coreml==1.2
+onnx-tf==1.5.0

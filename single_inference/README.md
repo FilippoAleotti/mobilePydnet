@@ -17,6 +17,16 @@ In particular:
 1. Download pretrained TensorFlow model [here](https://drive.google.com/file/d/1Zu41tHv89q_F7N5KFigzyUY5vAc8ufQL/view?usp=sharing), and move it into `ckpt` folder.
 2. run the `run.sh` script.
 
+# Export
+You can generate `.pb`, `tflite` and `mlmodel` of the network by running the command:
+
+```
+python export.py --ckpt ckpt/pydnet \
+        --arch pydnet \
+        --dest "./" \
+        --height 384 --width 640
+```
+
 # License
 Code is licensed under Apache v2.0
 Pre-trained models can be used only for research purposes.
