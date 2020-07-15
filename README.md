@@ -34,6 +34,13 @@ Weights of the network can be used for research purposes only.
 If you use this code in your projects, please cite our paper:
 
 ```
+@article{aleotti2020real,
+  title={Real-time single image depth perception in the wild with handheld devices},
+  author={Aleotti, Filippo and Zaccaroni, Giulio and Bartolomei, Luca and Poggi, Matteo and Tosi, Fabio and Mattoccia, Stefano},
+  journal={arXiv preprint arXiv:2006.05724},
+  year={2020}
+}
+
 @inproceedings{pydnet18,
   title     = {Towards real-time unsupervised monocular depth estimation on CPU},
   author    = {Poggi, Matteo and
@@ -46,6 +53,7 @@ If you use this code in your projects, please cite our paper:
 ```
 
 More info about the work can be found at these links:
+* [Real-time single image depth perception in the wild with handheld devices, Arxiv](https://arxiv.org/pdf/2006.05724.pdf)
 * [PyDNet paper](https://arxiv.org/pdf/1806.11430.pdf)
 * [PyDNet code](https://github.com/mattpoggi/pydnet)
 
