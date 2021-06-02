@@ -37,8 +37,9 @@ If you use this code in your projects, please cite our paper:
 @article{aleotti2020real,
   title={Real-time single image depth perception in the wild with handheld devices},
   author={Aleotti, Filippo and Zaccaroni, Giulio and Bartolomei, Luca and Poggi, Matteo and Tosi, Fabio and Mattoccia, Stefano},
-  journal={arXiv preprint arXiv:2006.05724},
-  year={2020}
+  journal={Sensors},
+  volume={21},
+  year={2021}
 }
 
 @inproceedings{pydnet18,
