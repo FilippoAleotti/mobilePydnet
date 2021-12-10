@@ -1,0 +1,6 @@
+tum/*
+nyu/*
+kitti/*
+*.npz
+*.h5
+*.tgz
